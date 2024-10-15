@@ -5,21 +5,29 @@ int main()
 
     // https://www.w3schools.com/cpp/cpp_while_loop_reallife.asp
     cout << "hello\n";
-    int number = 152;
-
-    for (int i = 1; i <= number; i++)
+    // int number = 15654;
+    int number = 15600;
+    // int number = 78945;
+    // int number = 78;
+    int reverseNumber = 0;
+    int count = 0;
+    while (number)
     {
-        // cout << i << "\n";
         int x = number / 10;
         int y = number % 10;
+        if (x == 0)
+        {
+            reverseNumber = y + reverseNumber;
+        }
+        else
+        {
+            reverseNumber = (y + reverseNumber) * 10;
+        }
         number = x;
-        cout << "x=" << x << "\n";
-        cout << "y=" << y << "\n";
-        cout << "number=" << number << "\n";
-
-        int result = y * 10 + number;
-        cout << "result = " << result << "\n";
+        count++;
+        cout << "count = " << count << "\n";
     }
+    cout << "reverse number = " << reverseNumber;
 
     return 0;
 }
