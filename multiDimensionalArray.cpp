@@ -51,7 +51,7 @@ int main() {
   Why Multi-Dimensional Arrays?
 Multi-dimensional arrays are great at representing grids. This example shows a practical use for them. In the following example we use a multi-dimensional array to represent a small game of Battleship:
   */
-
+//enjoy battleship game
  bool ship[4][4] = {
     {0,1,1,0},  //2-ship
     {0,0,0,0},  //0-ship
